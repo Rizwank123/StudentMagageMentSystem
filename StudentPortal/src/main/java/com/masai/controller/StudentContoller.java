@@ -26,7 +26,7 @@ public class StudentContoller {
 	public ResponseEntity<StudentDto> registerStudent(@RequestBody StudentDto student){
 		return new ResponseEntity<>(studentService.createStudent(student),HttpStatus.CREATED);
 	}
-	@GetMapping("/student/{studentId}/course/{courseId}")
+	@GetMapping("/students/{studentId}/course/{courseId}")
 	public ResponseEntity<StudentDto> assignCourse(@PathVariable long studentId,@PathVariable long courseId){
 		return ResponseEntity.ok(studentService.assignCourse(studentId, courseId));
 	}

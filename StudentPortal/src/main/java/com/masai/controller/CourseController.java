@@ -33,7 +33,7 @@ public class CourseController {
 		List<CourseDto> course=courseService.searchTopic(name);
 		return ResponseEntity.ok(course);
 	}
-	@GetMapping("/course/{courseId}")
+	@GetMapping("/courses/{courseId}")
 	public ResponseEntity<CourseDto> getCourseById(@PathVariable long courseId){
 		CourseDto course=courseService.getCourseById(courseId);
 		return ResponseEntity.ok(course);

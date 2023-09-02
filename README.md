@@ -1,6 +1,6 @@
 # Student Management System
 
-![ERD Image](link_to_erd_image.png)
+![ERD Image](studentManagementER.png)
 
 ## Table of Contents
 
