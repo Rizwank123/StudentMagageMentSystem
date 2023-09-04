@@ -32,6 +32,7 @@ public class CourseController {
 		
 		List<CourseDto> course=courseService.searchTopic(name);
 		return ResponseEntity.ok(course);
+		
 	}
 	@GetMapping("/courses/{courseId}")
 	public ResponseEntity<CourseDto> getCourseById(@PathVariable long courseId){

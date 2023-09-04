@@ -7,6 +7,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 
+
+
+
+//@EnableSwagger2
 @SpringBootApplication
 
 public class StudentPortalApplication {
